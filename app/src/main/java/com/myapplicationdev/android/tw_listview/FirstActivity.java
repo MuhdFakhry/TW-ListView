@@ -39,6 +39,9 @@ public class FirstActivity extends AppCompatActivity {
                 i.putExtra("year", position);
 
                 startActivity(i);
+
+
+                
             }
         });
 
