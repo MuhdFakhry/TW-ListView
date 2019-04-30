@@ -26,9 +26,20 @@ public class FirstActivity extends AppCompatActivity {
 
         al = new ArrayList<>();
         al.add("Year 1");
+        al.add("Year 2");
+        al.add("Year 3");
 
+        aa = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,al);
 
+        lv.setAdapter(aa);
 
-
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(FirstActivity.this, SecondActivity.class);
+                i.putExtra("year", position);
+                startActivity(i);
+            }
+        });
     }
 }

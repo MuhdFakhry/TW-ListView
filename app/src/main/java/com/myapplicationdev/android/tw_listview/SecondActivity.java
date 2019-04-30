@@ -46,7 +46,7 @@ public class SecondActivity extends AppCompatActivity {
                 Module selectedFood = module.get(position);
 
                 Toast.makeText(SecondActivity.this, selectedFood.getName()
-                                + " Star: " + selectedFood.isMod(),
+                                + " is selected",
                         Toast.LENGTH_LONG).show();
                 
 
