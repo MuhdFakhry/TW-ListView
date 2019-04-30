@@ -48,6 +48,7 @@ public class SecondActivity extends AppCompatActivity {
                 Toast.makeText(SecondActivity.this, selectedFood.getName()
                                 + " Star: " + selectedFood.isMod(),
                         Toast.LENGTH_LONG).show();
+                
 
             };
         });
